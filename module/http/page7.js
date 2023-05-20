@@ -4,7 +4,8 @@ const http = require('http')
 // step 2: create a http server
 const server = http.createServer((request, response) => {
   console.log('a request received')
-
+  //convert response into particualar data type and then send it..
+  //response.setHeader("Content-Type","application/json")
   // send the response
   response.end("<h1>hello from server...</h1>")
 })
